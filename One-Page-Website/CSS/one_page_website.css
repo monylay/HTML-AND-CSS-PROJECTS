@@ -1,0 +1,64 @@
+/*import link from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+html, body{
+    font-family: "Sacramento", cursive;
+    font-size: 25px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: lightblue;
+}
+
+form{
+    display: table;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input{
+    border: 2px solid rgb(128, 0, 128);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 15px 10px 0px;
+
+}
+.center-text{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+
+}
+
+footer table{
+    margin: 0 auto;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both;
+    border: 3px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    color: rgb(165, 165, 165);
+    font-size: 15px;
+}
+
+ul {
+    display: flex; /*removes bullets*/
+    padding: 0;
+}
+
+li {
+    display: inline; /*puts items side by side */
+    margin-right: 20px;
+}
