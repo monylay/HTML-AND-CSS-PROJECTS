@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img {
+    filter: drop-shadow(5px 5px 5px purple);
+    margin-bottom: 20px;
+}
+
+.round{
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+table, th, td{
+    border: 2px solid magenta;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th {
+    background-color: yellow;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.container{
+    position: flex;
+    justify-content: center;
+    color: white;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:200px;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+}
+
+.highlight{
+    color: yellow;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.center-img{
+    display: block;
+    margin: 20px auto;
+}
+
+.img-wrapper{
+    text-align: center;
+}
+
+/*image hover overlay*/
+
+.container2{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: lightblue;
+}
+
+.container2:hover .overlay{
+    opacity: 1;
+}
+
+.image-text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*video center size*/
+
+.video-container{
+    position: relative;
+    text-align: center;
+}
+
+video{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+}
+
+/*text overlay on video*/
+
+.video-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+}
+
+/*NAVBAR*/
+body {
+    margin: 0;
+}
+.navbar {
+    overflow: hidden;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: aqua;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*change background on mouse-over*/
+.navbar a:hover{
+    background: #ddd;
+    color: black;
+}
+
+.hover-text{
+    color: black;
+    transition: 0.3s;
+}
+
+.hover-text:hover{
+    color:red;
+}
+
+/*media queries*/
+
+
+/*FOOTER*/
+
+.footcenter{
+    text-align: center;
+}
+
+.thicker{
+    font-weight: bolder;
+}
