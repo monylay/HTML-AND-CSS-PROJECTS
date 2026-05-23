@@ -2,7 +2,14 @@
 
 This repository will contain all assignments that is completed with HTML and CSS!
 
-Projects:<br>
+Projects:
+<ul>
+    <li>My Intro Website</li>
+    <li>Pet Shop Website</li>
+    <li>Recipes  Website</li>
+    <li>Academy Cinemas Website</li>
+    <li>Challenges and Practices</li>
+    
 My Intro Website<br>
 my intro website is my very first website that i made and its all about me and what i've learned through the course.<br>
 Pet Shop Website<br>
