@@ -5,6 +5,7 @@
     <title>All About Cats</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/one_page_website.css">
+    <script src="JS/one_page_website.js" defer></script>
 </head>
 
 <body>
@@ -13,26 +14,6 @@
         <ul>
             <li><a href="one_page_website.html">HOME</a></li>
             <li><a href="contact_1.html">CONTACT</a></li>
-        </ul>
-        <ul>
-            <a href="#cat_1">
-                <li>Cat 1</li>
-            </a>
-            <a href="#cat_2">
-                <li>Cat 2</li>
-            </a>
-            <a href="#cat_3">
-                <li>Cat 3</li>
-            </a>
-            <a href="#cat_4">
-                <li>Cat 4</li>
-            </a>
-            <a href="#cat_5">
-                <li>Cat 5</li>
-            </a>
-            <a href="#cat_6">
-                <li>Cat 6</li>
-            </a>
         </ul>
     </nav>
     <!--HEADER-->
@@ -46,37 +27,69 @@
         <div>
             <h2>Choose a Cat!</h2>
             <div>
-                <!--CAT IMAGE 1-->
-                <div id="cat_1">
-                    <h3>Cat 1</h3>
-                    <img src="cat_images/cat_1.png" alt="Picture of straightface cat">
+                <div class="row">
+                    <div class="column">
+                        <img src="cat_images/cat_1.png" style="width:50%" onclick="openModal();currentSlide(1)"
+                            class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="cat_images/cat_2.jpg" style="width:50%" onclick="openModal();currentSlide(2)"
+                            class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="cat_images/cat_3.jpg" style="width:50%" onclick="openModal();currentSlide(3)"
+                            class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="cat_images/cat_4.png" style="width:50%" onclick="openModal();currentSlide(4)"
+                            class="hover-shadow cursor">
+                    </div>
                 </div>
-                <!--CAT IMAGE 2-->
-                <div id="cat_2">
-                    <h3>Cat 2</h3>
-                    <img src="cat_images/cat_2.jpg" alt="Picture of coughing cat">
-                </div>
-                <!--CAT IMAGE 3-->
-                <div id="cat_3">
-                    <h3>Cat 3</h3>
-                    <img src="cat_images/cat_3.jpg" alt="Picture of shocked cat">
-                </div>
-                <!--CAT IMAGE 4-->
-                <div id="cat_4">
-                    <h3>Cat 4</h3>
-                    <img src="cat_images/cat_4.png" alt="Picture of crying cat">
-                </div>
-                <!--CAT IMAGE 5-->
-                <div id="cat_5">
-                    <h3>Cat 5</h3>
-                    <img src="cat_images/cat_5.jpg" alt="Picture of confused cat">
-                </div>
-                <!--CAT IMAGE 6-->
-                <div id="cat_6">
-                    <h3>Cat 6</h3>
-                    <img src="cat_images/cat_6.png" alt="Picture of tongue out cat">
-                </div>
-            </div>
+                <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="cat_images/cat_1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="cat_images/cat_2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="cat_images/cat_3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="cat_images/cat_4.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+     <div class="column">
+      <img class="demo cursor" src="cat_images/cat_1.png" style="width:25%" onclick="currentSlide(1)" alt="smile cat">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="cat_images/cat_2.jpg" style="width:25%" onclick="currentSlide(2)" alt="cough cat">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="cat_images/cat_3.jpg" style="width:25%" onclick="currentSlide(3)" alt="shocked cat">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="cat_images/cat_4.png" style="width:25%" onclick="currentSlide(4)" alt="cry cat">
+    </div>
+  </div>
+</div>
     </section>
     <!--CAT VIDEO-->
     <section>
