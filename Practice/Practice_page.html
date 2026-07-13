@@ -1,44 +1,69 @@
-<!doctype html
-<html>
-    <head>
-        <title>
-            Welcome to my practice page
-        </title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <header>
-            <div>
-                <h1>Practice page!</h1>
-            </div>
-        </header>
-        <section>
-            <div>
-                <h2>cat images i like</h2>
-                <img src="cat_laugh.jpg" alt="picture of cat laughing">
-            </div>
-        </section>
-        <table border="1">
-            <colgroup>
-                <col style="background-color: lightblue;">
-                <col style="background-color: lightgreen;">
-            </colgroup>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-            </tr>
-            <tr>
-                <td>Pomi</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>Goldie</td>
-                <td>7</td>
-            </tr>
-        </table>
-        <style>
-            th, td {
-                padding: 10px;
-            }
-        </style>
-    </body>
+<!doctype html <html>
+
+<head>
+    <title>
+        Welcome to my practice page
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practice.css">
+    <script src="Basic_JavaScript_1.js" defer></script>
+</head>
+
+<body>
+    <h1 class="fade-in-element" style="font-size:10vw;">Cat Adjusting</h1>
+    <header>
+        <div>
+            <h1 class="fade-in-element delay-1">Practice page!</h1>
+        </div>
+    </header>
+    <section>
+        <div>
+            <h2>cat images i like</h2>
+            <img class="zoom" src="cat_laugh.jpg" alt="picture of cat laughing">
+        </div>
+    </section>
+    <table border="1">
+        <colgroup>
+            <col style="background-color: lightblue;">
+            <col style="background-color: lightgreen;">
+        </colgroup>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Pomi</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Goldie</td>
+            <td>7</td>
+        </tr>
+    </table>
+    <style>
+        th,
+        td {
+            padding: 10px;
+        }
+    </style>
+    <button class="open-button" onclick="openForm()">Open Form</button>
+    <div class="form-popup" id="myForm">
+        <form class="form-container" onsubmit="return validateForm()" method="post">
+            <h2>Contact Form</h2>
+            <label for="fname">First name:</label>
+            <br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="lname">Last name:</label>
+            <br>
+            <input type="text" id="lname" name="lname" value=""><br>
+            <label for="phone">Phone Number:</label>
+            <br>
+            <input type="tel" id="phone" name="phone" value=""><br>
+            <br>
+            <input type="submit" value="Submit">
+            <button type="button" class="btn cancel"
+            onclick="closeForm()">Close</button>
+        </form>
+    </div>
+</body>
